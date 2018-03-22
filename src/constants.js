@@ -1,0 +1,9 @@
+// @flow
+
+export const SORT_ASCENDING = 'ASCENDING';
+export const SORT_DESCENDING = 'DESCENDING';
+export const SORT_ITEMS_ACTION = 'SORT_ITEMS';
+export const CHANGE_AMOUNT_ACTION = 'CHANGE_AMOUNT';
+export const REMOVE_ITEM_ACTION = 'REMOVE_ITEM';
+export const ADD_ITEM_ACTION = 'ADD_ITEM';
+export const FILL_CART_ACTION = 'FILL_CART';

@@ -1,0 +1,96 @@
+/* Base styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  padding: 20px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.flexBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.appHeader {
+  margin: 20px 0;
+}
+
+/* Buttons */
+button {
+  background: #3498db;
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 4px 8px 4px 8px;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 4px;
+}
+
+button:hover {
+  background: #3cb0fd;
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/* cart table */
+table {
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table tr > th,
+table tr > td {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+
+table > tfoot > tr > td {
+  border-bottom: none;
+}
+
+/* sorting arrows */
+th.sortBy {
+  padding-right: 18px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+th.sortBy:before,
+th.sortBy:after {
+  border: 4px solid transparent;
+  content: '';
+  display: block;
+  height: 0;
+  right: 5px;
+  top: 50%;
+  position: absolute;
+  width: 0;
+}
+
+th.sortBy:before {
+  border-bottom-color: #ccc;
+  margin-top: -9px;
+}
+
+th.sortBy:after {
+  border-top-color: #ccc;
+  margin-top: 1px;
+}
+
+th.sortBy.ascending:before {
+  border-bottom-color: #333;
+}
+
+th.sortBy.descending:after {
+  border-top-color: #333;
+}
